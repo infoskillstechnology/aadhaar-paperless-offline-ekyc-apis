@@ -28,3 +28,6 @@ COPY --from=build-env /app-server/app /app-server
 ENTRYPOINT ["/app-server/app"]
 EXPOSE 3333
 EXPOSE 4444
+EXPOSE 4000
+EXPOSE 80
+EXPOSE 443
