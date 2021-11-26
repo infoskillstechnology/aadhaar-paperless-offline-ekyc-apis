@@ -168,7 +168,7 @@ func VerifyOTPAndGetAadhaar(opt VerifyOTPAndGetAadhaarOpt) (result VerifyOTPAndG
 	writer := multipart.NewWriter(payload)
 	_ = writer.WriteField("task", task)
 	_ = writer.WriteField("boxchecked", "0")
-	_ = writer.WriteField("zipcode", opt.ZipCode)
+	_ = writer.WriteField("zipcode", opt.ZipCode) // zipcode zip file password
 	_ = writer.WriteField("totp", opt.OTP)
 	_ = writer.WriteField("task", task)
 	_ = writer.WriteField("boxchecked", "0")
